@@ -1,8 +1,6 @@
-# task9-23MH1A0520
+# Product Catalog REST API (Spring Boot + Docker)
 
-# 🛒 Product Catalog REST API (Spring Boot + Docker)
-
-## 📌 Project Overview
+## Project Overview
 
 This project is a **production-ready backend REST API** for managing a **Product Catalog system**, built using **Spring Boot**, **Spring Data JPA**, **PostgreSQL**, and **Docker**.
 
@@ -12,23 +10,23 @@ This project demonstrates real-world backend development practices and serves as
 
 ---
 
-## ✨ Features Implemented
+## Features Implemented
 
-### 📁 Category Management
+### Category Management
 - Create a new category
 - Retrieve all categories
 - Retrieve category by ID
 - Update category by ID
 - Delete category by ID
 
-### 📦 Product Management
+### Product Management
 - Create a product and associate it with a category
 - Retrieve all products (with pagination)
 - Retrieve product by ID (including category details)
 - Update product by ID
 - Delete product by ID
 
-### 🔧 Additional Features
+### Additional Features
 - Input validation using Bean Validation
 - Global exception handling
 - PostgreSQL database integration
@@ -38,7 +36,7 @@ This project demonstrates real-world backend development practices and serves as
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |----------|--------|
@@ -54,7 +52,7 @@ This project demonstrates real-world backend development practices and serves as
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 src/main/java/com/example/productcatalog
 ├── controller/
@@ -69,14 +67,14 @@ src/main/java/com/example/productcatalog
 
 ---
 
-## ⚙️ Setup Instructions (Local with Docker)
+## Setup Instructions (Local with Docker)
 
-### 1️⃣ Clone the Repository
+1️. Clone the Repository
 ```bash
 git clone <your-repository-url>
 cd product-catalog
 
-2️⃣ Environment Variables Setup
+2.  Environment Variables Setup
 
 Create a .env file in the project root using the provided example:
 
@@ -88,7 +86,7 @@ Edit .env if needed:
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
 
-3️⃣ Run the Application Using Docker Compose
+3️. Run the Application Using Docker Compose
 docker-compose up --build
 
 
@@ -100,14 +98,14 @@ PostgreSQL database
 ✔ Database tables are auto-created
 ✔ Initial data is seeded automatically
 
-4️⃣ Access the Application
+4️. Access the Application
 
 API Base URL:
 
 http://localhost:8080
 
-🌐 API Endpoints
-📁 Category APIs
+* API Endpoints
+* Category APIs
 Method	Endpoint	Description
 POST	/api/categories	Create category
 GET	/api/categories	Get all categories
@@ -120,7 +118,7 @@ POST /api/categories
   "name": "Electronics"
 }
 
-📦 Product APIs
+* Product APIs
 Method	Endpoint	Description
 POST	/api/products	Create product
 GET	/api/products?page=0&size=10	Get all products
@@ -146,7 +144,7 @@ POST /api/products
   "categoryName": "Electronics"
 }
 
-🧪 Running Tests
+## Running Tests
 🔹 Run All Tests
 ./gradlew test
 
@@ -163,7 +161,7 @@ Controller integration tests
 
 Validation & error scenarios
 
-🐳 Deployment (Local Docker)
+* Deployment (Local Docker)
 
 The application is deployed locally using Docker Compose, which orchestrates:
 
@@ -178,7 +176,7 @@ To stop containers:
 
 docker-compose down
 
-🧯 Troubleshooting
+Troubleshooting
 ❌ Database Connection Issues
 
 Ensure Docker is running
@@ -199,40 +197,9 @@ Ensure DatabaseSeeder is annotated with @Component
 
 Ensure tables are empty on first run
 
-📸 Screenshots (Optional)
-
-You can include:
-
-Postman request/response screenshots
-
-Database inspection screenshots (pgAdmin / psql)
-
-Docker container logs
-
-📌 Screenshots help human evaluators understand functionality faster.
-
-✅ Conclusion
+* Conclusion
 
 This project demonstrates a real-world backend system built using modern Java and DevOps practices. It highlights skills in REST API design, database management, validation, testing, and containerized deployment—making it suitable for professional and enterprise-level applications.
 
-👤 Author
 
-Your Name
-GPP Task-9 – Product Catalog REST API
-
-
----
-
-## 🎯 This README Fully Covers:
-✔ All mandatory GPP requirements  
-✔ Human evaluator expectations  
-✔ Portfolio-quality documentation  
-
-If you want, I can:
-- ✅ Customize it with **your GitHub link**
-- ✅ Add **Swagger docs section**
-- ✅ Reduce it to **1-page evaluator version**
-- ✅ Add **Postman screenshots section**
-
-Just tell me 👍
 

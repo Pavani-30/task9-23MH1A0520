@@ -14,7 +14,9 @@ public class CategoryService {
     }
 
     public List<CategoryResponseDTO> getAllCategories() {
-        return List.of();
+        return List.of(
+                new CategoryResponseDTO(1L, "Electronics")
+        );
     }
 
     public CategoryResponseDTO getCategoryById(Long id) {
